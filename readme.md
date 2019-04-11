@@ -24,7 +24,7 @@ description - описание
 
 DELETE /projects/{id} - удаление проекта  
 
-GET /projects/{id}/tasks - перечень заданий проекта  
+GET /projects/{id}/tasks - перечень задач проекта  
 Get-параметры:  
 page - номер страницы, с 1, по умолчанию 1  
 perPage - проектов на странице, по умолчанию 20  
@@ -45,9 +45,9 @@ priority - приоритет, обязательное
 
 PATCH /projects/{id}/tasks/{id}  - изменение задачи, обновляет только заполненные поля  
 Параметры JSON:  
-name - название, обязательное  
+name - название    
 description - описание  
-status - статус, допускает NEW, IN_PROGRESS, CLOSED; обязательное  
-priority - приоритет, обязательное  
+status - статус, допускает NEW, IN_PROGRESS, CLOSED    
+priority - приоритет    
 
 DELETE /projects/{id}/tasks/{id} - удаление задачи  
